@@ -77,6 +77,10 @@ def wagon():
                     print(f'{rules[i-1][0]} does not apply for this scenario')
 
         return u
+
+    print('\n actions are : ', actions)
+    print('\n consequences are : ', consequence)
+
     
     print("################### action 1 ###################\n")
     u1 = utility(a1)
@@ -88,9 +92,15 @@ def wagon():
 
 
     if u1 >= u2:
-        return a1
+        print('the best action for the wagon scenario is : ' , a1)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a1])
+        print('\n\n')
     else:
-        return a2
+        print('the best action for the wagon scenario is : ' , a2)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a2])
+        print('\n\n')
        
 
 def boat():
@@ -107,7 +117,7 @@ def boat():
     actions = (a1, a2)
     consequence = (c1, c2, c3)
 
-    equation = {a2: c1, a1: c2, a2:c2, a2:c3}
+    equation = {a2: [c1, c2,c3], a1: c2,}
 
     def utility(action):
         u = 0
@@ -169,9 +179,15 @@ def boat():
 
 
     if u1 >= u2:
-        return a1
+        print('the best action for the boat scenario is : ' , a1)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a1])
+        print('\n\n')
     else:
-        return a2
+        print('the best action for the boat scenario is : ' , a2)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a2])
+        print('\n\n')
     
 
 def lying():
@@ -190,7 +206,7 @@ def lying():
     actions = (a1, a2)
     consequence = (c1, c2, c3, c4)
 
-    equation = {a1: c1, a1: c2, a1:c3, a1:c4}
+    equation = {a1: [c1,c2,c3,c4]}
 
     def utility(action):
         u = 0
@@ -250,11 +266,12 @@ def lying():
     u2  = utility(a2)
     print(f'the utility for action 2 will be {u2}')
 
-
     if u1 >= u2:
-        return a1
-    else:
-        return a2
+        print('the best action for the lying scenario is : ' , a1)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a1])
+        print('\n\n')
+
 
 
 
@@ -336,9 +353,15 @@ def mendacity():
 
 
     if u1 >= u2:
-        return a1
+        print('the best action for the lie scenario is : ' , a1)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a1])
+        print('\n\n')
     else:
-        return a2
+        print('the best action for the lie scenario is : ' , a2)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a2])
+        print('\n\n')
 
 
 def libel():
@@ -426,11 +449,16 @@ def libel():
     u2  = utility(a2)
     print(f'the utility for action 2 will be {u2}')
 
-
     if u1 >= u2:
-        return a1
+        print('the best action for the libel scenario is : ' , a1)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a1])
+        print('\n\n')
     else:
-        return a2
+        print('the best action for the libel scenario is : ' , a2)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a2])
+        print('\n\n')
 
 
 def false_positive_rumor():
@@ -508,13 +536,15 @@ def false_positive_rumor():
 
 
     if u1 >= u2:
-        return a1
+        print('the best action for the  false positive rumor scenario is : ' , a1)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a1])
+        print('\n\n')
     else:
-        return a2
-
-
-
-
+        print('the best action for the  false positive rumor scenario is : ' , a2)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a2])
+        print('\n\n')
 
 
 def false_negative_rumor():
@@ -582,8 +612,14 @@ def false_negative_rumor():
 
 
     if u1 >= u2:
-        return a1
+        print('the best action for the false negative rumor scenario is : ' , a1)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a1])
+        print('\n\n')
     else:
-        return a2
+        print('the best action for the false negative rumor scenario is : ' , a2)
+        print('\n\n')
+        print('the intension for this action is : ' , equation[a2])
+        print('\n\n')
 
 
