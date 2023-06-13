@@ -169,6 +169,9 @@ def boat():
 
         return u
     
+    print('\n actions are : ', actions)
+    print('\n consequences are : ', consequence)
+    
     print("################### action 1 ###################\n")
     u1 = utility(a1)
     print(f'the utility for action 1 will be {u1}')
@@ -258,6 +261,10 @@ def lying():
 
         return u
     
+    
+    print('\n actions are : ', actions)
+    print('\n consequences are : ', consequence)
+    
     print("################### action 1 ###################\n")
     u1 = utility(a1)
     print(f'the utility for action 1 will be {u1}')
@@ -343,6 +350,8 @@ def mendacity():
 
         return u
     
+    print('\n actions are : ', actions)
+    print('\n consequences are : ', consequence)
     print("################### action 1 ###################\n")
     u1 = utility(a1)
     print(f'the utility for action 1 will be {u1}')
@@ -440,6 +449,9 @@ def libel():
                     print(f'{rules[i-1][0]} does not apply for this scenario')
 
         return u
+
+    print('\n actions are : ', actions)
+    print('\n consequences are : ', consequence)
     
     print("################### action 1 ###################\n")
     u1 = utility(a1)
@@ -525,6 +537,9 @@ def false_positive_rumor():
                     print(f'{rules[i-1][0]} does not apply for this scenario')
 
         return u
+
+    print('\n actions are : ', actions)
+    print('\n consequences are : ', consequence)
     
     print("################### action 1 ###################\n")
     u1 = utility(a1)
@@ -601,6 +616,9 @@ def false_negative_rumor():
                     print(f'{rules[i-1][0]} does not apply for this scenario')
 
         return u
+    
+    print('\n actions are : ', actions)
+    print('\n consequences are : ', consequence)
     
     print("################### action 1 ###################\n")
     u1 = utility(a1)
